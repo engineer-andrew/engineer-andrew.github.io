@@ -49,6 +49,16 @@ footer > .container {
   background: url('../images/blacktocat.png') #0008e6 no-repeat 95% 50%;
 }
 
+.experience {
+  padding: 0 2em 0 2em;
+}
+
+.experience > li {
+  list-style: none;
+  padding-bottom:1em;
+  text-align: justify;
+}
+
 @media only screen and (min-width : 992px) {
   .github-link {
     margin-top: 1em;
