@@ -45,8 +45,18 @@ footer > .container {
   background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
 }
 
-.github-link:hover {
+.github-link:hover, .github-link:focus {
   background: url('../images/blacktocat.png') #0008e6 no-repeat 95% 50%;
+  outline: none;
+}
+
+.linked-in-link, .linked-in-link:hover, .linked-in-link:focus {
+  background: url('../images/linkedin-small.png') #0077B5 no-repeat 95% 50%;
+  outline: none;
+}
+
+.linked-in-link:hover {
+  background: url('../images/linkedin-small.png') #0077B5 no-repeat 95% 50%;
 }
 
 .experience {
@@ -62,5 +72,11 @@ footer > .container {
 @media only screen and (min-width : 992px) {
   .github-link {
     margin-top: 1em;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .pull-right {
+    float: left !important;
   }
 }
