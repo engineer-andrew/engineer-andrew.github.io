@@ -37,8 +37,8 @@
           About Me
         </div>
         <div class="panel-body">
-          <p>I've been writing software for quite a while (over 12 years, yikes!) and I <b>love</b> the process of taking an idea and making it a reality through technology. I believe quality software has the ability to change the world and how we interact with it and I'm always looking for ways I can use my skills in software engineering to improve things.</p>
-          <p>Writing software is great, but writing <b>quality</b> software gives me the warm fuzzies. I'm a huge proponent of test-driven development, so much so that in 2017 I founded a company specializing in teaching and certifying organizations on the benefits of test-driven development. You can check out our website <a href="https://www.thoroughtest.com/">here</a>. We're really excited about transforming test-driven development into something that all developers can (and want to) do!</p>
+          <p>I've been writing software for quite a while (over 17 years, yikes!) and I <b>love</b> the process of taking an idea and making it a reality through technology. I believe quality software has the ability to change the world and how we interact with it and I'm always looking for ways I can use my skills in software engineering to improve things.</p>
+          <p>Writing software is great, but writing <b>quality</b> software gives me the warm fuzzies. I'm a huge proponent of test-driven development (TDD), so much so that in 2017 I founded a company specializing in teaching and certifying organizations on the benefits of TDD. The business didn't pan out, but not because TDD isn't sound or valuable. We just had other priorities.</p>
         </div>
       </div>
       <div class="panel panel-primary">
@@ -46,9 +46,14 @@
           Experience
         </div>
         <div class="panel-body">
-          <p>Over my 12 years working in software I've worked on a vast variety of projects; some awesome and some... less awesome. I've also been asked - or volunteered - to help friends and family with their technology-related concerns. Below are some of my favorite projects, how I contributed to them, and why they stuck with me.</p>
+          <p>Over my may years working in software I've worked on a vast variety of projects; some awesome and some... less awesome. I've also been asked - or volunteered - to help friends and family with their technology-related concerns. Below are some of my favorite projects, how I contributed to them, and why they stuck with me.</p>
+          <em>The Reporting Solution</em>
+          <p>When I first joined my current company I was asked to pick up a project that people weren't even sure was possible. We wanted to show internal SSRS reports in an external website without exposing SSRS to the outside world. Wild. I pulled it off (it was quite a challenge), though not as nicely as I'd have preferred. This time I wrote a series of blog posts on it, which you can check out <a href="https://answersicouldntfindanywhereelse.blogspot.com/2018/05/ssrs-reports-in-angular-app-part-1.html" target="_blank">here</a>.</p>
+          <br />
           <em>The Beta Solution</em>
           <p>I was a contributor on a large application that used Angular for the front end. We decided that each piece would be developed separately by individual teams and then brought together as one massive monolithic application. One of the problems we encountered with this process was how we tested those individual packages prior to making them available for consumption in the application. We had more than one case where everything worked locally, but upon publication the whole application broke because of a small defect in one package. I designed a solution using VSTS (our build tool) to publish beta packages to our internal npm feed, then trigger a custom build of the application that consumed the newly published beta package. Using this new solution developers were able to test their published packages on a deployed test environment without changing the production ready packages and potentially crashing the application. Although this seems like something Semver could have handled (and was intended to handle), Semver was unfortunately not an option in our environment so we had to find a different solution.</p>
+          <br />
+          <em>I wrote this originally quite a while ago. I know this was a cool solution and I was super proud of it at the time, but these days I don't even remember what we did.</em>
           <br />
           <em>The Dynamic Solution</em>
           <p>On the same project, I developed a package that would not only be consumed by the larger application, but would also consume other packages dynamically for display. Those other packages could, in turn, consume other packages and so on down the line. My solution was to create a single (Angular) component and dynamically load components from other packages. The development of those other packages could then be spread across multiple teams, and each team could implement their own components, services, etc. without regard for how everything would fit in the overarching solution. This format enabled our group to quickly develop and deploy new features with very little concern for integration.</p>
@@ -78,7 +83,7 @@
         </div>
         <div class="panel-body">
           <p>I have a <a href="http://answersicouldntfindanywhereelse.blogspot.com/" target="_blank">blog</a>! And it's even good (disclaimer: I'm biased).</p>
-          <p>As I've already mentioned two other times, you can check out my company <a href="https://www.thoroughtest.com/">ThoroughTest</a> to learn more about test-driven development. We keep <a href="https://www.thoroughtest.com/blog">the blog</a> up-to-date with a new post once a week on various subjects related to test-driven development.</p>
+          <p>I love what I do and I'm pretty good at it. I'm currently searching for my next job so if you think I might be a good fit for your organization, reach out to me on LinkedIn (the link is in the header) and let's talk!</p>
         </div>
       </div>
     </div>
